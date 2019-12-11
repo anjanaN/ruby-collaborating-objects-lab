@@ -33,7 +33,7 @@ class Artist
     list = ""
     Song.all.each do |song|
       if song.artist == self
-        list << "${song.name}"
+        list << "blah"
       end
     end
     list
