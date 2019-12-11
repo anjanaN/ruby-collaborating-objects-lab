@@ -25,7 +25,7 @@ class Artist
       @@all.select { |artist| artist.name == name}
     else
       new_artist = Artist.new(name)
-      @@all.last
+      @@all.pop
     end
   end
 
