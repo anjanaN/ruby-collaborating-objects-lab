@@ -33,7 +33,7 @@ class Artist
     list = ""
     Song.all.select do |song|
       if song.artist == self
-        list << song + "\n"
+        list << "${song.name}"
       end
     end
   end
