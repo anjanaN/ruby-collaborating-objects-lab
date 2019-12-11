@@ -34,5 +34,7 @@ class Artist
     Song.all.select do |song|
       if song.artist == self
         list << song + "\n"
+      end
+    end
   end
 end
