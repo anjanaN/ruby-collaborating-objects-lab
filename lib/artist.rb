@@ -26,7 +26,6 @@ class Artist
       @@all[i]
     else
       new_artist = Artist.new(name)
-      @@all[-1]
     end
   end
 
