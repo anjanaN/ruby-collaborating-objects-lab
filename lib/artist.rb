@@ -31,7 +31,7 @@ class Artist
 
   def print_songs
     list = ""
-    Song.all.each do |song|
+    Song.all.select do |song|
       if song.artist == self
         list << "blah"
       end
