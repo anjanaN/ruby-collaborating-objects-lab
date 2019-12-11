@@ -22,7 +22,8 @@ class Artist
 
   def self.find_or_create_by_name(name)
     if @@all.any? { |artist| artist.name == name}
-      @@all.select { |artist| artist.name == name}
+      i = @@all.index { |artist| artist.name == name}
+      @@all[i]
     else
       new_artist = Artist.new(name)
       @@all[-1]
