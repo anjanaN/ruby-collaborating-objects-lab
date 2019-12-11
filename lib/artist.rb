@@ -30,12 +30,10 @@ class Artist
   end
 
   def print_songs
-    list = ""
     Song.all.each do |song|
       if song.artist == self
-        list << "blah"
+        song
       end
     end
-    list
   end
 end
