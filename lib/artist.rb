@@ -36,5 +36,6 @@ class Artist
         list << "${song.name}"
       end
     end
+    list
   end
 end
